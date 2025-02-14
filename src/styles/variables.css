@@ -1,0 +1,20 @@
+:root {
+  /* Colors */
+  --primary-color: #ff6f61;
+  --secondary-color: #333;
+  --background-color: #f4f4f4;
+  --text-color: #333;
+  --text-light-color: #fff;
+
+  /* Fonts */
+  --font-family: 'Roboto', sans-serif;
+  --heading-font-size: 2.5em;
+  --text-font-size: 1.2em;
+
+  /* Spacing */
+  --section-padding: 60px 20px;
+  --container-max-width: 800px;
+
+  /* Borders */
+  --border-radius: 5px;
+}

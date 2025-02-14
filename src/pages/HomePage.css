@@ -1,0 +1,95 @@
+/* General Layout */
+.portfolio {
+  background-size: cover; 
+  background-attachment: fixed; 
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif; 
+  color: #fff;
+  background-size: cover;
+  display: grid;
+  grid-template-areas: 
+    "navbar navbar"
+    "left right";
+  grid-template-columns: 1fr 1fr; /* Both sections are equally divided */
+  grid-template-rows: auto 1fr;
+  min-height: 100vh;
+  position: relative;
+  background: none;
+ /* background:linear-gradient(90deg, #363232, #ab2ae7, #363232, #ab2ae7fb, #363232);
+   Makes it the reference for absolute positioning */
+}
+
+header {
+  grid-area: navbar;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Left Section */
+.left-section {
+  grid-area: left;
+  padding: rem;
+  z-index: 1; /* Keeps left section behind the midsection */
+}
+
+/* Right Section */
+.right-section {
+  grid-area: right;
+  display: flex;
+  z-index: 1; /* Keeps right section behind the midsection */
+}
+
+/* Midsection */
+.midsection {
+  position: absolute;
+  top: 45%; /* Center vertically */
+  left: 45%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Center within the parent */
+  height: fit-content;
+  width: 200px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 14%;
+  border-radius: 10px; /* Smooth edges */
+  z-index: 3; /* Ensure it overlaps both sections */
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .portfolio {
+    grid-template-columns: 1fr; /* Single column layout */
+    grid-template-areas: 
+      "navbar"
+      "left"
+      "right";
+  }
+
+  .midsection {
+    top: 50%; /* Adjust for center vertically */
+    left: 50%; /* Adjust for center horizontally */
+  }
+}
+
+@media (max-width: 1200px) {
+  .left-section,
+  .right-section {
+    padding: 1rem; /* Smaller padding */
+  }
+
+  .midsection {
+    width: 150px; /* Adjust width for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.5rem; /* Smaller font size */
+  }
+
+  .midsection {
+    width: 100px; /* Adjust width for smallest screens */
+  }
+}

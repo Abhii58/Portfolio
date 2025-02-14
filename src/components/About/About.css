@@ -1,0 +1,145 @@
+
+
+.about-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+ /*
+  background: linear-gradient(
+    to bottom right,
+    #2b2c48,  
+    #564f7c,  
+    #d1b4e2,  
+    #e6d3c2   
+  );*//*
+  background: linear-gradient(
+    to bottom right,
+    #a3a3ad,  
+    #9a91c9,  
+    #d1b4e2,  
+    #e6d3c2   
+  ); */
+  background-size: cover; 
+  background-attachment: fixed; 
+  
+ 
+
+}
+.profile-image h1{
+  font-size: 3rem;
+  color:rgb(0, 0, 0);
+  align-self: start;
+  margin-top: 20px;
+}
+.profile-image{
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+
+}
+.profile-image-section {
+  width: 90%;
+  box-shadow: 0px -4px 6px -2px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -90px;
+  
+  border-bottom: 0;
+ 
+}
+
+.profile-image img {
+  width: 250px;
+  height: 250px;
+  background: url('./profiles.png');
+  background-size: cover;
+  z-index: 4; /* Higher z-index to ensure it overlaps */
+  border-radius: 50%;
+  box-shadow: 2px 4px 8px #f805059c;
+  border:5px inherit black;
+  
+}
+
+.profile-content {
+  display: flex;
+  
+  border-top: 0;
+  justify-content: space-between;
+  width:90%;
+  max-width: 1600px;
+  gap:20px;
+  color: whitesmoke;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  transition:  box-shadow 0.3s ease;
+}
+
+.profile-content:hover {
+ 
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  
+}
+
+.p-left-section {
+  width: 70%;
+  padding-right: 20px;
+  padding-top: 0;
+  padding:20px;
+ margin-top: 20px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #cde0f3;
+ 
+}
+.p-left-section:hover{
+  background: linear-gradient(90deg, #36323294, #ab2ae7);
+  color: rgb(235, 231, 231);
+}
+p{
+  font-size: 1.5rem;
+}
+
+.p-right-section {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top:200px;
+}
+
+.info-card {
+  /*background: rgba(255, 255, 255, 0.2);
+  color: black;*/
+ 
+  background: linear-gradient(90deg, #36323294, #ab2ae7);
+  color: aliceblue;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 300px;
+  transition: background 0.3s ease;
+  box-shadow: 0 8px 15px  #cde0f3;
+
+ 
+}
+
+
+.info-card h3 {
+  margin-top: 0;
+}
+
+.info-card ul {
+  padding-left: 20px;
+}
+
+.info-card:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #000000;
+  box-shadow: 8px 8px 20px black;
+ 
+}

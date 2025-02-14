@@ -1,0 +1,50 @@
+.midSection {
+  align-items: center;
+  justify-content: center;
+}
+
+.buttons-mid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  display: flex;
+
+  align-items: center;
+  gap: 3rem;
+  margin-left: 25%;
+  flex-direction: column;
+
+  flex-wrap: nowrap;
+  width: fit-content;
+
+}
+
+.hex-buttons {
+  padding: 0.5rem 1rem;
+  border: none;
+ 
+  /*border: 5px solid rgb(228, 223, 223);
+  background: linear-gradient(90deg, #363232, #ab2ae7, gray);
+  background: rgba(255, 255, 255, 0.2);
+  color: white;*/
+  background: linear-gradient(90deg, #363232, #ab2ae7);
+  color: whitesmoke;
+  border-radius: 50%;
+  box-shadow: 0 5px 12px black;
+  height: 85px;
+  width: 85px;
+  cursor: pointer;
+}
+  /*animation: rotate 2s linear infinite;
+}
+/*
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}*/

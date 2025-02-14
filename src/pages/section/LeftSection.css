@@ -1,0 +1,268 @@
+/* General styles */
+.title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+  margin-left: 70px;
+  margin-top: 0px;
+  color: rgb(33, 141, 236);
+}
+
+.hi {
+  margin-top: 20px;
+  margin-left: 90px;
+  line-height: normal;
+  font-size: 4rem;
+  font-weight: bold;
+  color:  #f5f1f2;
+}
+
+.description-left {
+  font-size: 0.9rem;
+  font-weight: bold;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  margin-left: 80px;
+  margin-top: 0;
+  color: rgb(228, 230, 231);
+}
+
+.buttons {
+  display: flex;
+  gap: 1.2rem;
+  flex-direction: column;
+  margin-left: 40%;
+  border-radius: 20px;
+  margin-top: 10px;
+  width: 80px;
+}
+
+.button {
+  padding: 0.2rem 0rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: aqua;
+  font-size: 1.5rem;
+  width: 200px;
+  border-radius: 50px;
+  margin-left: 2%;
+  
+}
+
+.home-button {
+  background: linear-gradient(90deg, #363232, #ab2ae7);
+  color: #f8f7f7;
+  margin-top: 2px;
+  box-shadow: 0 3px 5px black;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.home-button:hover {
+  transform: scale(1.1);
+  background: linear-gradient(90deg, #363232, #ab2ae7);
+  color:white;
+}
+
+.about-button {
+  background: linear-gradient(90deg, #363232, #ab2ae7);
+  color: #f8f7f7;
+  box-shadow: 0 3px 5px black;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.about-button:hover {
+  transform: scale(1.1);
+  background: linear-gradient(90deg, #363232, #ab2ae7);
+  color: whitesmoke;
+}
+
+.hexagons {
+  margin-top: 2rem;
+  display: flex;
+  margin-left: 17%;
+  gap: 0;
+  flex-direction: column;
+  margin-top: 0px;
+}
+
+.hexagon {
+  width: 120px;
+  height: 120px;
+  background-color: #4e4a4a;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  margin-top: 4px;
+}
+
+.red {
+  background-size: cover;
+  background-color: gray;
+}
+
+.buttons-group {
+  display: grid;
+  grid-template-columns: repeat(2, 92px);
+  gap: 2.2rem;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0%;
+  width: 400px;
+  height: 200px;
+  padding: 0.5rem;
+  padding-left: 0;
+  margin-top: 1%;
+}
+
+.hex-button1, .hex-button2, .hex-button3, .hex-button4 {
+  
+  /*border: 5px solid rgb(224, 42, 42);*/
+  /*background: rgba(255, 255, 255, 0.2);
+  color: rgb(0, 0, 0);*/
+  background: linear-gradient(90deg, #363232, #ab2ae7);
+  color: #f8f7f7;
+  border-radius: 50%;
+  height: 80px;
+  border: none;
+  
+  width: 80px;
+  font-size: 3rem;
+  font-weight: bold;
+  box-shadow: 0 4px 8px black;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.hex-button1:hover, .hex-button2:hover, .hex-button3:hover, .hex-button4:hover {
+  transform: scale(1.1);
+}
+
+.hex-button2 {
+  background-image: url('./github.png');
+  background: linear-gradient(90deg, #363232, #ab2ae7);
+  color: #f8f7f7;
+  height: 80px;
+  width: 80px;
+  border: none;
+}
+
+.hex-button3 {
+  background: linear-gradient(180deg, #363232, #ab2ae7);
+  color: #f8f7f7;
+  background-image: url('./img/ig.png');
+ 
+  background-size:60px 60px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: overlay;
+  height: 80px;
+  width: 80px; 
+  border: none;
+}
+
+.hex-button4 {
+  background: linear-gradient(180deg, #363232, #ab2ae7);
+  color: #f8f7f7;
+  background-image: url('./img/mail1.png');
+  background-size:65px 65px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: overlay;
+  height: 80px;
+  width: 80px;
+  border: none;
+  
+}
+
+.gp {
+  display: inline-flex;
+}
+
+#typing-text {
+  display: inline-block;
+  border-right: 0.15rem solid #4d494d;
+  animation: blink-caret 0.75s step-end infinite;
+ 
+  color: rgb(255, 254, 254);
+ 
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
+}
+/*
+
+@media (max-width: 1200px) {
+  .title, .hi, .description {
+    margin-left: 50px;
+  }
+  .buttons {
+    margin-left: 30%;
+  }
+  .buttons-group {
+    grid-template-columns: repeat(2, 85px);
+    width: 350px;
+  }
+  .hexagon {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .title, .hi, .description {
+    margin-left: 30px;
+    font-size: 3rem;
+  }
+  .buttons {
+    margin-left: 20%;
+  }
+  .buttons-group {
+    grid-template-columns: repeat(2, 75px);
+    width: 300px;
+  }
+  .hexagon {
+    width: 80px;
+    height: 80px;
+  }
+  .button {
+    width: 150px;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title, .hi, .description {
+    margin-left: 10px;
+    font-size: 2rem;
+  }
+  .buttons {
+    margin-left: 10%;
+  }
+  .buttons-group {
+    grid-template-columns: repeat(2, 60px);
+    width: 250px;
+  }
+  .hexagon {
+    width: 60px;
+    height: 60px;
+  }
+  .button {
+    width: 120px;
+    font-size: 1rem;
+  }
+}
+
+*/
+
+
+
+
+
+
+
+
+
+

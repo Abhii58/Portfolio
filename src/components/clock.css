@@ -1,0 +1,79 @@
+
+/* Clock.css */
+.clock-container {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px; /* Square size */
+  height: 90px;
+  background-color: #333; /* Dark background */
+  border-radius: 20%; /* Rounded corners like a smartwatch */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+  margin: auto; /* Center horizontally */
+  margin-top: 0px;
+  margin-left: 0px;
+
+}
+
+.time-display {
+  color: #61dafb; /* Light blue color */
+  /* Large font size */
+  font-family: 'Orbitron', sans-serif; /* Digital font */
+  font-weight: bold; /* Bold text */
+  text-align: center; /* Center text */
+  
+}
+
+/* Clock.css */
+.clock-container {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 90px;
+  background-color: #333;
+  border-radius: 50%; /* Rounded corners */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  margin: auto;
+  margin-top: 0px;
+  margin-left: 0px;
+  overflow: hidden; /* Ensure ::before doesn’t exceed corners */
+}
+
+.clock-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  padding: 5px; /* Thickness of the "border" */
+  background: linear-gradient(45deg, #ff3502, #8fc1fa);
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor; 
+  mask-composite: exclude;
+}
+
+
+.time-display {
+  color: #61dafb; /* Light blue color */
+  /* Large font size */
+  font-family: 'Orbitron', sans-serif; /* Digital font */
+  font-weight: bold; /* Bold text */
+  text-align: center;
+  animation: colorChange 1min infinite; /* Use the corrected animation */
+  
+}
+
+@keyframes colorChange { /* Corrected @keyframes syntax */
+  0% {
+    color: red; /* Set the color to red at 0% */
+  }
+  100% {
+    color: rgb(17, 255, 203); /* Example: Set the color to blue at 100% */
+  }
+}

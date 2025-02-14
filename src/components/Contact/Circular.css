@@ -1,0 +1,22 @@
+/* ContactPage.css */
+ .circular-element1 {
+  border-radius: 50%;
+  background: linear-gradient(to bottom, #007bff, #00ffd5);
+  opacity: 0.8;
+  position: absolute;
+}
+
+ .circular-element1.large {
+  width: 150px;
+  height: 150px;
+}
+
+.circular-element1.medium {
+  width: 100px;
+  height: 100px;
+}
+
+.circular-element1.small {
+  width: 50px;
+  height: 50px;
+}

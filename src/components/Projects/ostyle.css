@@ -1,0 +1,105 @@
+.projects-section {
+  padding: 60px 20px;
+  background: linear-gradient(
+    to bottom right,
+    #2b2c48,  
+    #564f7c,  
+    #d1b4e2,  
+    #e6d3c2   
+  );
+  background-size: cover; 
+  background-attachment: fixed; 
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif; 
+  color: #fff; 
+
+
+  padding-bottom: 100px;
+  /* Smooth gradient background */
+  /* Subtle animation for gradient */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  color: #00ffd5;
+  background: rgba(0, 0, 0, 0); /* Transparent container background */
+  border-radius: 10px;
+  backdrop-filter: blur(10px); /* Adds a glassmorphism effect */
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  color: #e8e8e8; /* Subtle contrast */
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Glow effect */
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background: rgba(31, 31, 44, 0.9); /* Slightly transparent for depth */
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Border with low opacity */
+  border-radius: 15px;
+  padding: 20px;
+  color: #ffffff;
+  text-align: center;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.5);
+  transition: transform 0.4s ease, box-shadow 0.4s ease, width 0.4s;
+  position: relative;
+}
+
+.project-card:hover {
+  transform: scale(1.05) translateY(-15px); /* Subtle hover effect */
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.7);
+}
+
+.project-card h3 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  color: #00ffd5;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.project-card p {
+  font-size: 1em;
+  margin-bottom: 20px;
+  color: #cfcfcf; /* Slightly faded text */
+}
+
+.project-card a {
+  display: inline-block;
+  padding: 10px 25px;
+  font-size: 1em;
+  color: #fff;
+  background: linear-gradient(45deg, #007bff, #0056b3);
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s ease all;
+}
+
+.project-card a:hover {
+  background: linear-gradient(45deg, #0056b3, #003c7f);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Animation for gradient background */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

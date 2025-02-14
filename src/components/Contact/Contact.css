@@ -1,0 +1,291 @@
+
+
+.contact-page {
+  width: 100%;
+  max-width: 100vw;
+  margin: 10px auto;
+ 
+  padding: 40px;
+  margin-top:0px;
+
+ align-items: center;
+ justify-content: center;/*
+ background: linear-gradient(
+  to bottom right,
+  #e9dcec,  
+  #e0ddec,  
+  #d1b4e2,  
+  #e6d3c2  
+); */
+}
+
+
+/* Header Styling */
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+
+/* Content Layout */
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  color: black;
+  max-width: 1300px;
+  margin:auto;
+  padding: 50px;
+  border-radius: 20px;
+  
+}
+
+/* Left Section (Image) */
+.left-section-c {
+  flex: 60%;
+  height: 600px; /* Consistent height for the container */
+  border-radius: 20px;
+  display: flex; /* Ensures child elements align properly */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; 
+  padding:10px;/* Center content vertically */
+}
+
+.contact-image {
+  width: 100%;
+  height: 100%; /* Match the height of the parent container */
+  background-image: url('./img.png'); /* Ensure the image path is correct */
+  background-size: cover; /* Ensures the image covers the entire container */
+  background-position: center; /* Center the image within the container */
+  border-radius: 10px; /* Adds rounded corners */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adds subtle shadow */
+}
+
+
+
+/* Right Section */
+.right-section-c {
+  flex: 40%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  color: black;
+  padding: 20px;
+  box-shadow: 0 4px 9px rgb(236, 77, 77);
+
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.842);
+}
+
+.contact-form {
+  margin-bottom: 20px;
+}
+
+.contact-form h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.submit-button {
+  display: inline-block;
+  background: rgb(71, 70, 70);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 2px 4px black;
+  transition: background-color 0.3s ease-in-out, transform 0.2s linear;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.1); /* Slightly larger scale effect */
+}
+
+.social-h{
+  font-size: 1.3rem;
+  color: #000000;
+  
+}
+
+
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .left-section,
+  .right-section {
+    flex: 100%;
+  }
+}
+
+
+
+/* SOCIAL ICONS */
+
+.Social-c .icons-c {
+  display: flex;
+  gap: 20px;
+  margin-left: 30%;
+ 
+ 
+  
+}
+
+.Social-c .icons-c a {
+  color: #47ffd7;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;/*background base*/
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px black;
+}
+
+.Social-c .icons-c a .layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;/*layers shape*/
+  transition: transform 0.3s;
+}
+
+.Social-c .icons-c a .layer span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border: 1px solid hsl(162, 100%, 53%);
+  border-radius: 5px;/*layers shape*/
+  transition: all 0.3s;
+}
+
+/* instagram */
+.Social-c .icons-c a .layer span.fab {
+ 
+  border: 2px solid hsl(19, 100%, 50%);
+  background-size: cover;
+  background-image: url("./images/instaa.png");
+  box-shadow: 2px 2px 2px rgb(238, 103, 126);
+}
+
+/* linkedin */
+.Social-c .icons-c a .layer span.linkedin {
+  background-color: #d7d8df;
+  border: 2px solid hsl(160, 100%, 50%);
+  background-size: cover;
+  background-image: url("./images/lin.png");
+  box-shadow: 2px 2px 2px #0bffde;
+  border-radius: 50%;
+}
+
+/* Github */
+.Social-c .icons-c a .layer span.Github {
+  background-color: #d7d8df;
+  border: 2px solid rgb(0, 0, 0);
+  background-size: cover;
+  background-image: url("./images/git.png");
+  box-shadow: 2px 2px 2px #ffffff;
+}
+
+/* layers for icons */
+.Social-c .icons-c .instagram .layer span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border: 1px solid hsl(357, 100%, 53%);
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+
+.Social-c .icons-c .linkedin .layer span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border: 1px solid hsl(180, 100%, 50%);
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+
+.Social-c .icons-c .Github .layer span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border: 1px solid hsl(0, 0%, 0%);
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+
+.Social-c .icons-c a:hover .layer {
+  transform: rotate(-1deg) skew(0deg);
+}
+
+.Social-c .icons-c a:hover .layer span:nth-child(1) {
+  opacity: 1;
+}
+
+.Social-c .icons-c a:hover .layer span:nth-child(2) {
+  opacity: 1;
+  transform: translate(5px, -5px);
+}
+
+.Social-c .icons-c a:hover .layer span:nth-child(3) {
+  opacity: 1;
+  transform: translate(10px, -10px);
+}
+
+.Social-c .icons-c a:hover .layer span:nth-child(4) {
+  opacity: 1;
+  transform: translate(15px, -15px);
+}
