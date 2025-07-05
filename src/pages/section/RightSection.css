@@ -54,28 +54,29 @@
   padding: 10px;
   height:130px;
   box-shadow: 0 4px 7px black;
-  background: linear-gradient(90deg, #363232, #ab2ae7);
+  /*background: linear-gradient(90deg, #363232, #ab2ae7);*/
+  background: #e695a3;
   color: whitesmoke;
 }
 
 .ml-header {
   font-size: 1.2rem;
   font-weight: bold;
-  color: #f8f4f4;
+  color: #9b1a8a;
   margin-bottom: 10px;
 }
 
 .ml-content {
   font-size: 0.9rem;
   line-height: 1.2;
-  color: #faf2f2;
+  color: #4e1655;
 }
 
 /* Web Developer Section */
 .dev {
   width: fit-content; /* Adjust width */
-  background: linear-gradient(90deg, #363232, #ab2ae7);
-  color: whitesmoke;
+  background: #e695a3;
+  color: #9b1a8a;
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 4px 7px black;
@@ -84,14 +85,14 @@
 .dev-header {
   font-size: 1.2rem;
   font-weight: bold;
-  color: whitesmoke;
+  color: #9b1a8a;
   margin-bottom: 10px;
 }
 
 .dev-content {
   font-size: 1rem;
   line-height: 1.6;
-  color: whitesmoke;
+  color: #631c6d;
 }
 
 /* Rotating Button */

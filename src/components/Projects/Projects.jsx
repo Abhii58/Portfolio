@@ -48,6 +48,16 @@ const projectsData = [
     link: '#'
   },
   {
+    title: 'Zepto inventory Analysis',
+    technologyUsed: ['SQL', 'Tableau Dashboard'],
+    languages: [
+      { name: 'SQL', percentage: 70 },
+      { name: 'Tableau', percentage: 30 }
+    ],
+    description: 'data Analysis of zepto inventry ',
+    link: '#'
+  },
+  {
     title: 'Fake News Detector',
     technologyUsed: ['Python', 'Machine Learning', 'NLP', 'Flask'],
     languages: [

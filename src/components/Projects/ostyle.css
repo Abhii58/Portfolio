@@ -25,7 +25,7 @@
   margin: 0 auto;
   padding: 0 20px;
   color: #00ffd5;
-  background: rgba(0, 0, 0, 0); /* Transparent container background */
+  background: rgb(163, 54, 54); /* Transparent container background */
   border-radius: 10px;
   backdrop-filter: blur(10px); /* Adds a glassmorphism effect */
 }

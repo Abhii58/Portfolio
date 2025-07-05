@@ -93,13 +93,15 @@
   padding:20px;
  margin-top: 20px;
   border-radius: 20px;
-  background: rgba(255, 255, 255, 0.2);
-  color: #cde0f3;
+  /*background:#e695a3ce;
+  color: #9b1a8a;*/
+  background: linear-gradient(90deg,#ff914d, #8c52ff);
+  color: #f8f7f7;
  
 }
 .p-left-section:hover{
-  background: linear-gradient(90deg, #36323294, #ab2ae7);
-  color: rgb(235, 231, 231);
+  background:#e695a3ce;
+  color: #9b1a8a;
 }
 p{
   font-size: 1.5rem;
@@ -115,15 +117,16 @@ p{
 
 .info-card {
   /*background: rgba(255, 255, 255, 0.2);
-  color: black;*/
+  color: black;
  
-  background: linear-gradient(90deg, #36323294, #ab2ae7);
+  background: linear-gradient(90deg, #36323294, #ab2ae7);*/
+  background: rgba(255, 255, 255, 0.2);
   color: aliceblue;
   border-radius: 10px;
   padding: 20px;
   max-width: 300px;
   transition: background 0.3s ease;
-  box-shadow: 0 8px 15px  #cde0f3;
+  box-shadow: 0 8px 15px  #5a4b56;
 
  
 }

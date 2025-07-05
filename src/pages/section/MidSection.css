@@ -28,9 +28,11 @@
   background: linear-gradient(90deg, #363232, #ab2ae7, gray);
   background: rgba(255, 255, 255, 0.2);
   color: white;*/
-  background: linear-gradient(90deg, #363232, #ab2ae7);
-  color: whitesmoke;
+ /* background: linear-gradient(90deg, #363232, #ab2ae7);
+  color: whitesmoke; */
   border-radius: 50%;
+  background: linear-gradient(90deg, #8c52ff,#ff914d);
+  color: whitesmoke;
   box-shadow: 0 5px 12px black;
   height: 85px;
   width: 85px;

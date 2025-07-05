@@ -84,7 +84,8 @@
 }
 
 .tech-tag {
-  background: linear-gradient(90deg, #36323294, #ab2ae7);
+  /*background: linear-gradient(90deg, #36323294, #ab2ae7);*/
+  background: linear-gradient(90deg,#ff914d, #8c52ff);
   padding: 0.3rem 0.8rem;
   border-radius: 20px;
   font-size: 0.9rem;
